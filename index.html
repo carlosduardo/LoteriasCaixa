@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Jogos - Loterias Caixa</title>
+</head>
+<body>
+    <h1>Gerador de Jogos - Loterias Caixa</h1>
+    <h2>🍀Selecione a faixa de cada jogo e boa sorte!!!🍀</h2>
+<div class="mega">
+    <label id="resultadoMega">Jogue a Sorte na MegaSena!</label> <br> 
+    <label for=>Números ➡ De: </label><input id="deInicialMega" type="number" min="1" max="60" value="1"> 
+    <label for=>Até: </label><input id="ateFinalMega" type="number" min="1" max="60" value="60"> 
+    <button id="botaoJogarMega" onclick="geradorMegaSena()">Jogar Mega</button>
+</div>
+<br>
+<div class="quina">
+    <label id="resultadoQuina">Jogue a Sorte na Quina!</label> <br>   
+    <label for=>Números ➡ De: </label><input id="deInicialQuina" type="number" min="1" max="80" value="1"> 
+    <label for=>Até: </label><input id="ateFinalQuina" type="number" min="1" max="80" value="80">
+    <button id="botaoJogarQuina" onclick="geradorQuina()">Jogar Quina</button>
+</div>
+<br>
+<div class="lotofacil">
+    <label id="resultadoLotoFacil">Jogue a Sorte na LotoFácil!</label> <br>   
+    <label for=>Números ➡ De: </label><input id="deInicialLoto" type="number" min="1" max="25" value="1"> 
+    <label for=>Até: </label><input id="ateFinalLoto" type="number" min="1" max="25" value="25">
+    <button id="botaoJogarLotoFacil" onclick="geradorLotoFacil()">Jogar LotoFácil</button>
+</div>
+<br>
+<div class="maisMili">
+    <label id="resultadoMaisMilionaria">Jogue a Sorte na ➕Milionária!</label> <br>   
+    <label for=>Matriz de Números ➡ De: </label><input id="deInicialMaisMilionariaNum" type="number" min="1" max="50" value="1"> 
+    <label for=>Até: </label><input id="ateFinalMaisMilionariaNum" type="number" min="1" max="50" value="50"><br>
+    <label for=>Matriz de Trevos Numerados ➡ De: </label><input id="deInicialMaisMilionariaTrevo" type="number" min="1" max="6" value="1"> 
+    <label for=>Até: </label><input id="ateFinalMaisMilionariaTrevo" type="number" min="1" max="6" value="6"><br><br>
+    <button id="botaoJogarMaisMilionaria" onclick="geradorMaisMilionaria()">Jogar ➕Milionária</button>
+    <br>
+    <label id="resultadoMaisMilionariaNum"></label>
+    <label id="resultadoMaisMilionariaTrevo"></label>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
